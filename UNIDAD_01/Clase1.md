@@ -100,3 +100,69 @@ Uno de los apstectos más concidos de LEAN es la eliminación de desperdicios, l
 * _E_. Excess processing: Exceo de proceso en alguna estación de trabajo. Ej: Crear multiples versiones de la misma tarea.
 
 ### LEAN SOFTWARE DEVELOPMENT
+Los principios LEAN pueden adaptarse al desarrollo de software, esto incluye los conceptos de desperdicios, las pruebas y la entrega o implementación del rpdocuto, siempre con foco en la mejora continua de la calidad y en la reducción de riesgo.
+Adaptando LEAN al desarrollo de software tenemos los siguientes principios:
+* _Eliminar el desperdicio_: Quitar actividades que no agregan valor al producto.
+* _Construir con calidad_: Siempre velar por la calidad, mientras más rapido se agregue calidad al software más barato será para la organizaci´n la implementación, obteniendo una mejor reputación con el cliente.
+* _Crear conocimiento_: Dejar de querer predecir el futuro y basarse en el aprendizaje que el feedback que se genera a partir de las entregas de software.
+* _Diferir las decisiones_: La toma de decisiones es un punto critico, por eso este principio se basa en retrasar lo más posible una decisión importante que no se puedda volver atrás para así tener tiempo de conseguir un mayor aprendizaje y disminuyendo la incertidumbre.
+* _Entregar lo más pronto posible_: Las entregas tempranas trae reditos económicos, liberar porciones dfe producto que tengan impacto sobre el cliente, disminuye la ansideda de los interesados en el producto, al desplegar funciones en pequeñas porciones de producto genera menor riesgo asociado a errores de despliegue.
+* _Respetar a las personas_: Los roles jerárquicos de la organización deben promover que las personas son fundamentales en la organizaci´n y se los debe respetar y apoyar en su desarrollo profesional y personal para que puedan hacer mejor su trabajo.
+* _Optimizar toda la organización_: Al momento de3 pensar en optimización de la áreas se piense el todo de una manera sistmática, es decir, la optimización de un sector va a modificar el funcionamiento de otros en la organización. Basicamnete no producir por producir para saturar al siguiente área.
+
+### LEAN STARTUP
+Esta metodología consiste en una manera de abordar la construcción de productos con un alto nivel de incertidumbre respecto a si ese producto o servicio tiene demanda en el mercado. La idea es que con el lanzamiento de porciones de producto se valide la hiótesis sobre la necesidad del cliente mediante el feedback. Permitiendo tener un aprendizaje del cliente con la utilización del producto y permite una rápida adaptación.  
+Esta metodología centra la mirada en el cliente y no en el producto y se basa en 3 etapas:
+* __Construir__: Se desarrrolla el producto en base a la hipótesis que se quiere validar. La primera versión será MVP (Minimo Producto Viable).
+* __Medir__: Se establece una serie de métricas que permitan validar la hipótesis.
+* __Aprender__: Basandose en las métricas es posible determinar si la hipótesis es válida.
+
+Este ciclo es iterativo, es decir que para cada hipótesis de versión del producto que queremos lanzar se repite el ciclo de aprendizaje a través de la experimentación con el producto desarrollado.
+
+~~~text
+                 ┌─────────────────┐
+                 │    CONSTRUIR    │
+                 │                 │
+                 │ Desarrollar el  │
+                 │ producto / MVP  │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │      MEDIR      │
+                 │                 │
+                 │ Medir resultados│
+                 │ y validar       │
+                 │ la hipótesis    │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    APRENDER     │
+                 │                 │
+                 │ Analizar el     │
+                 │ feedback y      │
+                 │ obtener         │
+                 │ aprendizaje     │
+                 └────────┬────────┘
+                          │
+                          │
+                          └──────────────► CONSTRUIR
+~~~
+
+## Metodología AGILE
+DevOps además de basarse en la filosofía Lean se baja en los principios y valores de la agilidad, junto a sus prácticas y técnicas. 
+
+### Ciclos de feedback
+Esta metodología se basa en ciclos cortos (menores a dos meses) en los que es posible aprender y adaptar el trabajo realizado a la nueva información que proviene de los usuarios para así mejorar el producto y satisfacer sus necesidades.
+### Iteraciones
+Los ciclos de feedback, en general, definen las iteraciones de desarrollo o definen las implementaciones.
+### Incremento
+Aqui se plantea que el producto crezca como si fuese un organismo vivo, el software crece como si fuese una planta, y para lograrlo se basa en las principales prácticas y herramientas de inteniería de software.
+### Valores
+DevOps toma los siguiente pricipios y valores del agilismo:
+* __Personas e interacciones sobre procesos y herramientas.__
+* __Software funcionando sobre documentación exhaustiva.__
+* __Colaboración con el cliente sobre negociación contractual.__
+* __Adaptación al cambio sobre el seguimiento de un plan.__
+
