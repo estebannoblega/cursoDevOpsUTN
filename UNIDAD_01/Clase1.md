@@ -166,3 +166,14 @@ DevOps toma los siguiente pricipios y valores del agilismo:
 * __Colaboración con el cliente sobre negociación contractual.__
 * __Adaptación al cambio sobre el seguimiento de un plan.__
 
+## Cultura de la organización
+En una organización donde se promueven los componentes DevOps las personas tienden a colaborar para que todos puedan crear productos de calidad para toda la organización y no para cumplir con la única responsabilidad del área funcional.
+
+### Antipatrones de equipos y organizacionales
+Aqui haremos una breve lista de patrones de división de áreas y/o equipos que son propensos a limitar a una organizcaión a la finalidad que tiene DevOps:
+* Desarrollo Y Operaciones separados como silos funcionales: El inconveniente radica en que las áreas no colaboran, una vez que el desarrollo está listo se lo pasa a manos Operaciones y si algo sale mal vuelve la atención a desarrollo. Ambas área se comportan como cliente-proveedor.
+* Equipo DevOps aislado: La problematica que surge en esta situación, es que el valor que genera la cédula DevOps no alimenta de conocimiento al resto de la organización, sigue siendo un silo funcional, por lo tanto puede provocar un mayor distanciamiento en las interacciones entre las áreas de Desarrollo y Operaciones.
+* Desarrollo no necesita de operaciones: La problematica es que desarrollo subestima las habilidades que tiene operaciones para agregar valor al producto y además no se tiene una mirada sistemática sobre la organización en donde ignorar la imporancia de un área, trae consecuencias directas sobre la calidad de lo que se elabora.
+* DevOps como equipo de herramientas: Ocurre cuando las organizaciones optan por adoptar un equipo especializado en herramientas en las cuales facilitan los proceso  de despliegue y desarrollo, medición, orquestación y configuración, pero dejando de lado la colaboración de las áreas.
+* Re bautizar el rol SysAdmin: Ocurre cuando incorporan personal especializado en las mejores prácticas de ingeniería en desarrollo de software al área de operaciones pero con el título de "DevOps". Este patrón es similar al de "Desarrollo nonecesita de Operaciones". Sólo se optimiza el área de operaciones sin ningún tipo de interacción el área de desarrollo.
+
