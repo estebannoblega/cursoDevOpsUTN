@@ -174,3 +174,33 @@ Primero se escribe la prueba
 
 Finalmente, en la demostración (Demo) el equipo junto con el stakeholder observan que las pruebas cumplan las expectativas de comportamiento del sistema que se establecieron en un principio y además se suelen ejecutar pruebas exploratorias sobre el código implementado para detectar posibles riesgos que no se hayan identificado con antelación (estas son pruebas manuales).
 
+
+## Arquitectura de contenedores/Microservicios
+Los contenedores se basan en imágenes de sistemas operativos, a su vez la ejecución de
+estos contenedores virtualiza ciertos procesos de la máquina host y son manejados por su
+kernel.  
+
+Generalmente, al querer implantar una aplicación y aprovechar los beneficios que nos proveerá la virtualización en contenedores, la arquitectura más utilizada es la de orientada a microservicio o a servicios.   
+Dentro de una arquitectura de contenedores, el objetivo al que se apunta es que cada
+contenedor posea un servicio (un contenedor, una responsabilidad), que este a su vez
+tendrá una especificación de la API por la cual se comunican los clientes (el código
+desarrollado).\
+Otra ventaja que ofrece es que el servicio que corra escale y crezca de una manera independiente, ya que cualquier modificación que se realice no debería afectar al resto de la aplicación.\
+
+Por otro lado, la arquitectura de microservicios permite tener la flexibilidad de implementar
+soluciones de servicios en distintas tecnologías, dado que cada contenedor podría tener
+diferentes sistemas operativos (alojados en hosts distintos) ya que posee la característica
+de ser desacoplados.
+
+## Orquestador
+
+El orquestador de implementación es el responsable de coordinar la secuencia de pasos
+requeridas para poder hacer el despliegue de una aplicación en un ambiente, de una
+manera automatizada. El ambiente podría ser pruebas para desarrolladores, pruebas de
+integración, pruebas de aceptación o bien producción. Lo recomendable es que el proceso
+y los scripts que se utilicen sean los mismos para todos los ambientes. De esta manera se
+mantiene probado reiteradas veces tanto el proceso de implementación como los scripts
+necesarios para realizarlo.\
+Mientras las actividades que realiza el orquestador estén más automatizadas y haya cada
+vez menos pasos manuales para el flujo desde el desarrollo hasta la entrega del software
+en los ambientes que correspondan (Pipeline), más rentable será para la empresa.\
