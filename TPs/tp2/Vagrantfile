@@ -1,0 +1,49 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  if Vagrant.has_plugin?("vagrant-vbguest") then
+    config.vbguest.auto_update = false
+  end
+  
+  # Imagen por defecto
+  box = 'ubuntu/jammy64'
+  
+  # Si se ejecuta sobre macOS se configura otra imagen
+  if Vagrant::Util::Platform::architecture == 'arm64'
+    box = "bento/ubuntu-22.04"
+  else
+    config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y virtualbox-guest-x11"
+  end
+
+  config.vm.box = box
+
+  # Redireccionamiento de puertos
+  config.vm.network "forwarded_port", guest: 8080, host: 8080, auto_correct: true
+
+  # Permite descargas con certificados vencidos o por http
+  config.vm.box_download_insecure = true
+
+  # Nombre de la máquina
+  config.vm.hostname = "utn-devops.localhost"
+  config.vm.boot_timeout = 3600
+
+  # Configuración VirtualBox
+  config.vm.provider "virtualbox" do |v|
+    v.name = "utn-devops-vagrant-ubuntu-tp2"
+    v.memory = "1024"
+  end
+
+  # Directorio compartido
+  config.vm.synced_folder ".", "/vagrant"
+
+  # Configuración VMware
+  config.vm.provider "vmware_desktop" do |vm|
+    vm.memory = "1024"
+  end
+
+  # Provisionamiento
+  config.vm.provision :shell, path: "Vagrant.bootstrap.sh", run: "always"
+
+end
