@@ -1,2 +1,10 @@
+# TP1: mantener fuera del repositorio
 /UNIDAD_02/tp1
-/TPs
+/TPs/tp1/
+
+# Estado generado por Vagrant
+**/.vagrant/
+
+# Archivos temporales
+**/*.log
+**/.DS_Store
