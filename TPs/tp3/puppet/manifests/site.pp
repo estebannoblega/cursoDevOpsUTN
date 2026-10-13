@@ -1,3 +1,19 @@
+# Gestionar el grupo de Puppet
+group { 'puppet':
+  ensure => present,
+  system => true,
+}
+
+# Gestionar el usuario de Puppet
+user { 'puppet':
+  ensure     => present,
+  gid        => 'puppet',
+  home       => '/opt/puppetlabs/server/data/puppetserver',
+  shell      => '/usr/sbin/nologin',
+  system     => true,
+  managehome => false,
+  require    => Group['puppet'],
+}
 
 # Directorio para las claves de repositorios APT
 file { '/usr/share/keyrings':
